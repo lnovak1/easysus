@@ -7,18 +7,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.*;
 import android.view.*;
-import android.app.*;
+
 
 public class Userscreen extends AppCompatActivity {
-    private Button buttonMarcarConsulta;
-    private Button sairuser;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userscreen);
-        buttonMarcarConsulta=(Button)findViewById(R.id.bt_marcar_consulta);
-        sairuser=(Button)findViewById(R.id.bt_sair);
-        Intent mainToQueue = new Intent();
+        Button buttonMarcarConsulta=(Button)findViewById(R.id.bt_marcar_consulta);
+        Button sairuser=(Button)findViewById(R.id.bt_sair);
+
         buttonMarcarConsulta.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view){

@@ -8,13 +8,13 @@ import android.widget.*;
 
 
 public class Register extends AppCompatActivity {
-    private Button button1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        button1=(Button)findViewById(R.id.register);
+        Button button1=(Button)findViewById(R.id.register);
         Spinner spinnermun = (Spinner) findViewById(R.id.spinnermunicipio);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.municipio, android.R.layout.simple_spinner_item);
