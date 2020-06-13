@@ -1,13 +1,14 @@
 package com.example.easysuspai;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.*;
-
-
 public class Register extends AppCompatActivity {
 
 
@@ -36,38 +37,52 @@ public class Register extends AppCompatActivity {
         button1.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(susnumberreg.getText().toString().compareTo("")==0){
-                    TextView numsusregister=(TextView)findViewById(R.id.textView4);
+                if (susnumberreg.getText().toString().compareTo("") == 0) {
+                    TextView numsusregister = (TextView) findViewById(R.id.textView4);
                     numsusregister.setTextColor(Color.parseColor("#f04747"));
                     return;
                 }
 
-                if (personname.getText().toString().compareTo("")==0) {
+                if (personname.getText().toString().compareTo("") == 0) {
 
-                    TextView namereg=(TextView)findViewById(R.id.textView);
-                        namereg.setTextColor(Color.parseColor("#f04747"));
-                        return;
+                    TextView namereg = (TextView) findViewById(R.id.textView);
+                    namereg.setTextColor(Color.parseColor("#f04747"));
+                    return;
                 }
 
 
-                if (passwordreg.getText().toString().compareTo("")==0) {
+                if (passwordreg.getText().toString().compareTo("") == 0) {
 
-                    TextView passreg=(TextView)findViewById(R.id.textView2);
-                        passreg.setTextColor(Color.parseColor("#f04747"));
-                        return;
+                    TextView passreg = (TextView) findViewById(R.id.textView2);
+                    passreg.setTextColor(Color.parseColor("#f04747"));
+                    return;
 
                 }
-                if (passwordconfirmreg.getText().toString().compareTo(passwordreg.getText().toString())!=0) {
-                    TextView passconfirm=(TextView)findViewById(R.id.textView3);
-                    String textooriginal=passconfirm.getText().toString();
+                if (passwordconfirmreg.getText().toString().compareTo(passwordreg.getText().toString()) != 0) {
+                    TextView passconfirm = (TextView) findViewById(R.id.textView3);
+                    String textooriginal = passconfirm.getText().toString();
                     passconfirm.setTextColor(Color.parseColor("#f04747"));
                     passconfirm.setText(textooriginal + " Senhas nao conferem");
                     return;
 
                 }
+                boolean checkreg=true;//chechar se ja existe id primary
+                if(checkreg){
+                    int duracao = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(getApplicationContext(),R.string.cadastrocriminoso,duracao);
+                    toast.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL,0,0);
+                    toast.show();
+                    return;}
 
+                //inserçao na tabela paciente
+               int duracao = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(getApplicationContext(),R.string.cadastrook,duracao);
+                toast.show();
+                Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                toast.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL,0,0);
+                startActivity(intent);
+                   }
 
-            }
         });
     }
 }

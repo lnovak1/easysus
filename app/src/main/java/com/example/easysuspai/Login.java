@@ -1,5 +1,6 @@
 package com.example.easysuspai;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -42,4 +43,6 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-}
+
+
+    }

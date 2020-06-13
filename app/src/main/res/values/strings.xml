@@ -12,8 +12,10 @@
     <string name="nome_unidade">Nome: </string>
     <string name="endereco_unidade">Endereço: </string>
     <string name="bt_entrar_fila">Marcar Consulta</string>
+    <string name="bt_checarfila">Checar fila</string>
     <string name="bt_sair">Sair</string>
-
+    <string name="cadastrook">CADASTRO REALZIADO COM SUCESSO!</string>
+    <string name="cadastrocriminoso">ERRO:Cadastro ja existe.</string>
 
     <string name="activity_queue_title">Nome,</string>
     <string name="activity_queue_position">Atualmente tem N pessoas na sua frente.</string>
