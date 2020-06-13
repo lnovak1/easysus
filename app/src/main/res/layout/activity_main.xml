@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/suslogov2"/>
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/registermain"
             android:layout_width="150dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -36,7 +36,7 @@
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/loginmain"
             android:layout_width="119dp"
             android:layout_height="43dp"
             android:layout_gravity="center_horizontal"
