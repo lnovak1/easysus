@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">easysus.pai</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_register">Registre-se agora</string>
+    <string name="name">Digite seu nome completo:</string>
+    <string name="susnumber">Digite seu Numero do SUS:</string>
+    <string name="pass">Digite sua senha:</string>
+    <string name="newpass">Digite sua nova senha:</string>
+    <string name="confirmpass">Confirme sua senha:</string>
+</resources>
