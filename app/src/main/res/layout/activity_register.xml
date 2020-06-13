@@ -31,7 +31,7 @@
             android:layout_marginTop="10dp"/>
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/susnumberreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -48,7 +48,7 @@
             android:layout_marginTop="5dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/personname"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/campos"
@@ -65,7 +65,7 @@
             android:layout_marginTop="5dp"/>
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/passwordreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -84,7 +84,7 @@
             android:textColor="@color/cinzaclaro"/>
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/passwordconfirmreg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
