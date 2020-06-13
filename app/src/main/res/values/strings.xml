@@ -21,6 +21,15 @@
     <string name="activity_queue_bt_back">Voltar</string>
     <string name="activity_queue_bt_sair">Sair</string>
     <string name="timer">XX:XX</string>
+    <string name="municipio">Escolha o Municipio onde mora:</string>
+    <string name="bairro">Escolha o bairro onde mora:</string>
+
+    <string-array name="municipio">
+        <item>Rio de Janeiro</item>
+    </string-array>
+    <string-array name="bairro">
+        <item>Tijuca</item>
+    </string-array>
 
 
 
