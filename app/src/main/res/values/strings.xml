@@ -18,7 +18,8 @@
     <string name="cadastrocriminoso">ERRO:Cadastro ja existe.</string>
 
     <string name="activity_queue_title">Nome,</string>
-    <string name="activity_queue_position">Atualmente tem N pessoas na sua frente.</string>
+    <string name="activity_queue_position">Atualmente tem </string>
+    <string name="activity_queue_position2">  pessoas na sua frente.</string>
     <string name="activity_queue_forecast">Previsão de Atendimento:</string>
     <string name="activity_queue_bt_back">Voltar</string>
     <string name="activity_queue_bt_sair">Sair</string>

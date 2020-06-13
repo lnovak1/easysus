@@ -18,7 +18,8 @@
             android:text="@string/bem_vindo"
             android:fontFamily="sans-serif-condensed-medium"
             android:textSize="30sp"
-            android:textColor="@color/text"/>
+            android:textColor="@color/text"
+            android:id="@+id/welcome"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

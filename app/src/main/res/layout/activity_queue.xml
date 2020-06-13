@@ -11,6 +11,7 @@
         android:orientation="vertical"
         android:padding="10dp"
         android:background="@drawable/background_solid">
+        //text puxa nome da tabela q da match com o susnumber
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,9 +19,9 @@
             android:textAlignment="center"
             android:fontFamily="sans-serif-condensed-light"
             android:textSize="35sp"
-
             android:textColor="@color/text"
             android:textStyle="bold"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +30,9 @@
             android:fontFamily="sans-serif-condensed-light"
             android:textSize="25sp"
             android:textAlignment="center"
-            android:textColor="@color/text"/>
+            android:textColor="@color/text"
+            android:id="@+id/filaposicao"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
