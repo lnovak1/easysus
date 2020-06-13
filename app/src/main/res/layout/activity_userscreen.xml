@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userscreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_solid">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bem_vindo"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="30sp"
+            android:textColor="@color/text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_dados_unidade"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25sp"
+            android:textColor="@color/text"
+              android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_unidade"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25sp"
+            android:textColor="@color/colorBigText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/endereco_unidade"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25sp"
+            android:textColor="@color/colorBigText"/>
+
+
+            <Button
+                android:id="@+id/bt_marcar_consulta"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:background="@drawable/clickbutton"
+                android:text="@string/bt_entrar_fila"
+                android:textColor="@color/colorBigText"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/bt_sair"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/clickbutton"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/bt_sair"
+                android:textColor="@color/colorBigText" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

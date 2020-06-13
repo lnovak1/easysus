@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">easysus.pai</string>
+    <string name="app_name">easysus</string>
     <string name="action_sign_in">Login</string>
     <string name="action_register">Registre-se agora</string>
     <string name="name">Digite seu nome completo:</string>
@@ -7,4 +7,21 @@
     <string name="pass">Digite sua senha:</string>
     <string name="newpass">Digite sua nova senha:</string>
     <string name="confirmpass">Confirme sua senha:</string>
+    <string name="bem_vindo">Bem vindo, </string>
+    <string name="title_dados_unidade">Unidade de Saúde Mais Próxima:</string>
+    <string name="nome_unidade">Nome: </string>
+    <string name="endereco_unidade">Endereço: </string>
+    <string name="bt_entrar_fila">Marcar Consulta</string>
+    <string name="bt_sair">Sair</string>
+
+
+    <string name="activity_queue_title">Nome,</string>
+    <string name="activity_queue_position">Atualmente tem N pessoas na sua frente.</string>
+    <string name="activity_queue_forecast">Previsão de Atendimento:</string>
+    <string name="activity_queue_bt_back">Voltar</string>
+    <string name="activity_queue_bt_sair">Sair</string>
+    <string name="timer">XX:XX</string>
+
+
+
 </resources>

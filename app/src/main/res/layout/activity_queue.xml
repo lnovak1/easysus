@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Queue">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_solid">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_queue_title"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="35sp"
+
+            android:textColor="@color/text"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_queue_position"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:textColor="@color/text"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_queue_forecast"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textSize="20sp"
+            android:textColor="@color/colorBigText"
+            android:textAlignment="center"/>
+        <TextView
+            android:inputType="time"
+            android:id="@+id/timequeue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:text="@string/timer"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+
+            <Button
+                android:id="@+id/bt_voltar_queue"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:background="@drawable/clickbutton"
+                android:text="@string/activity_queue_bt_back"
+                android:textColor="@color/colorBigText"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"/>
+
+            <Button
+                android:id="@+id/bt_sair_queue"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/clickbutton"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@string/activity_queue_bt_sair"
+                android:textColor="@color/colorBigText"
+                android:layout_marginTop="20dp"/>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
