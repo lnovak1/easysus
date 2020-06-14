@@ -37,7 +37,8 @@
             android:layout_marginTop="5dp"
             android:fontFamily="sans-serif-condensed-light"
             android:textSize="25sp"
-            android:textColor="@color/colorBigText"/>
+            android:textColor="@color/colorBigText"
+            android:id="@+id/upa"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +46,8 @@
             android:layout_marginTop="10dp"
             android:fontFamily="sans-serif-condensed-light"
             android:textSize="25sp"
-            android:textColor="@color/colorBigText"/>
+            android:textColor="@color/colorBigText"
+            android:id="@+id/end"/>
 
 
             <Button
