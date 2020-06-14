@@ -66,16 +66,16 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"/>
 
-            <Button
-                android:id="@+id/bt_sair_queue"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:background="@drawable/clickbutton"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="@string/activity_queue_bt_sair"
-                android:textColor="@color/colorBigText"
-                android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/bt_sair_queue"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clickbutton"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/activity_queue_bt_sair"
+            android:textColor="@color/colorBigText" />
 
 
 

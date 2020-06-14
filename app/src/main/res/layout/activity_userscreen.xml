@@ -62,16 +62,16 @@
                 android:layout_gravity="center"
                 />
 
-            <Button
-                android:id="@+id/bt_sair"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/clickbutton"
-                android:fontFamily="sans-serif-condensed-medium"
-                android:text="@string/bt_sair"
-                android:textColor="@color/colorBigText" />
+        <Button
+            android:id="@+id/bt_sair"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/clickbutton"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/bt_sair"
+            android:textColor="@color/colorBigText" />
 
     </LinearLayout>
 

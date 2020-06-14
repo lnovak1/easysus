@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "844954000692",
+    "firebase_url": "https://easysus-fb75e.firebaseio.com",
+    "project_id": "easysus-fb75e",
+    "storage_bucket": "easysus-fb75e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844954000692:android:9a7595f9f0472b79919961",
+        "android_client_info": {
+          "package_name": "com.example.easysuspai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844954000692-14g95hvoml4356hd2arb8ram741eq19h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.easysuspai",
+            "certificate_hash": "4a74e0c396edb238e431f45fc61a1cf9ff4761c1"
+          }
+        },
+        {
+          "client_id": "844954000692-gq2mfpilb56oukm3r24g6sd2njsh24se.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQEAcU1Q6n2JQiFzV_Yk_da-4O0tzsQuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844954000692-gq2mfpilb56oukm3r24g6sd2njsh24se.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
