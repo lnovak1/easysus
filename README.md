@@ -4,5 +4,5 @@ Grande parte do tempo dentro de uma unidade SUS é desperdiçada em espera, deix
 Uma vez que tornamos a fila para a espera do atendimento realizado pelo clínico geral em virtual, dinamiza-se o tempo que você passa dentro de uma unidade SUS, evitando aglomerações dentro do local e, além disso, otimizando seu tempo para você aproveitar as coisas boas da vida!
 
 
-IMPORTANTE!! app para testes presente na pag:
+!!IMPORTANTE!! app para testes presente na pag:"APPRELEASE"  !!IMPORTANTE!!   
 trabalho desenvolvido no Android-Studio
