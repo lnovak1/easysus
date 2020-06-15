@@ -9,13 +9,19 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.*;
+
+import java.util.ArrayList;
+
 public class Register extends AppCompatActivity {
-
-
+    ArrayList<Controle> controles;
+    Controle controleDados;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+        controleDados = (Controle) getIntent().getSerializableExtra("controledadosmain");
+
         Button button1=(Button)findViewById(R.id.register);
         final EditText  susnumberreg=(EditText)findViewById(R.id.susnumberreg);
         final EditText  personname=(EditText)findViewById(R.id.personname);
@@ -66,19 +72,25 @@ public class Register extends AppCompatActivity {
                     return;
 
                 }
-                boolean checkreg=true;//chechar se ja existe id primary
-                if(checkreg){
-                    int duracao = Toast.LENGTH_SHORT;
-                    Toast toast = Toast.makeText(getApplicationContext(),R.string.cadastrocriminoso,duracao);
-                    toast.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL,0,0);
-                    toast.show();
-                    return;}
 
-                //inserçao na tabela paciente
+                if(controleDados.getRegistro().existePaciente(Integer.valueOf(susnumberreg.getText().toString())) != null) {
+                    int duracao = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(getApplicationContext(), R.string.cadastrocriminoso, duracao);
+                    toast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL, 0, 0);
+                    toast.show();
+                    return;
+                }
+
+                Paciente paciente = new Paciente(Integer.parseInt(susnumberreg.getText().toString()), personname.getText().toString(), passwordreg.getText().toString());
+                controleDados.getRegistro().addPaciente(paciente);
+
                int duracao = Toast.LENGTH_SHORT;
                 Toast toast = Toast.makeText(getApplicationContext(),R.string.cadastrook,duracao);
                 toast.show();
+                controles = new ArrayList<Controle>();
+                controles.add(controleDados);
                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                intent.putExtra("controledadosregister", controles.get(0));
                 toast.setGravity(Gravity.CENTER_HORIZONTAL|Gravity.CENTER_VERTICAL,0,0);
                 startActivity(intent);
                    }

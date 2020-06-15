@@ -17,10 +17,10 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="258dp"
-            app:srcCompat="@drawable/suslogov2"
-            />
+            android:layout_width="289dp"
+            android:layout_height="146dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/suslogov2" />
 
         <TextView
             android:id="@+id/textView4"
@@ -122,7 +122,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/clickbutton"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="@string/action_register"
             android:textAlignment="center"/>
 

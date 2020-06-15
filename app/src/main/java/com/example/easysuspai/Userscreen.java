@@ -8,29 +8,39 @@ import android.os.Bundle;
 import android.widget.*;
 import android.view.*;
 
+import java.util.ArrayList;
+
 
 public class Userscreen extends AppCompatActivity {
-
+    ArrayList<Controle> controles;
+    Controle controleDados;
+    Paciente pacienteLogado;
+    Boolean pacienteNaFila;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userscreen);
+
+        controleDados = (Controle) getIntent().getSerializableExtra("controledadoslogin");
+        if (controleDados == null)
+            controleDados = (Controle) getIntent().getSerializableExtra("controledadosqueue");
         TextView welcome=(TextView)findViewById(R.id.welcome) ;
         TextView upa=(TextView)findViewById(R.id.upa) ;
         TextView end=(TextView)findViewById(R.id.end) ;
         Button buttonMarcarConsulta=(Button)findViewById(R.id.bt_marcar_consulta);
         Button sairuser=(Button)findViewById(R.id.bt_sair);
-        String nome ="Cremenoso!";//trocar nome pelo da database OBS.: so o primeiro nome
-        String upa2 ="UPA - Tijuca";// quanto tiver varios banco ira fazer conexao com o banco para mostrar o nome
-        String end2 ="Rua Conde de Bonfim, s/n - Tijuca, Rio de Janeiro - RJ, 20520-054";//pode usar a API do SUS para mostrar os enderecos qqnd tiver mais bancos
-        String welcome1=getString(R.string.bem_vindo);
+        pacienteLogado = controleDados.getRegistro().existePacienteLogado();
+        String nome =pacienteLogado.getNome();
+        String upa2 ="UPA - Tijuca";
+        String end2 ="Rua Conde de Bonfim, s/n - Tijuca, Rio de Janeiro - RJ, 20520-054";
+        String welcome1= getString(R.string.bem_vindo);
         String upa1=getString(R.string.nome_unidade);
         String end1=getString(R.string.endereco_unidade);
-        welcome.setText(welcome1.toString()+nome.toString());
+        welcome.setText(welcome1.toString()+" "+nome.toString());
         upa.setText(upa1.toString()+upa2.toString());
         end.setText(end1.toString()+end2.toString());
-        final boolean checkfila=false;
-        if(checkfila) {
+        pacienteNaFila = controleDados.getFila().pacienteNaFila(pacienteLogado.getNumeroSUS());
+        if(pacienteNaFila) {
             buttonMarcarConsulta.setText(R.string.bt_checarfila);
 
         }
@@ -42,15 +52,19 @@ public class Userscreen extends AppCompatActivity {
         buttonMarcarConsulta.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view) {
-                if (checkfila) {
-
-
+                if (pacienteNaFila) {
+                    controles = new ArrayList<Controle>();
+                    controles.add(controleDados);
                     Intent intent = new Intent(getBaseContext(), Queue.class);
+                    intent.putExtra("controledadosuserscreen", controles.get(0));
                     startActivity(intent);
                 }
-                if (!checkfila) {
-                    //inserçaodatabase
+                if (!pacienteNaFila) {
+                    controleDados.getFila().addPaciente(pacienteLogado);
+                    controles = new ArrayList<Controle>();
+                    controles.add(controleDados);
                     Intent intent = new Intent(getBaseContext(), Queue.class);
+                    intent.putExtra("controledadosuserscreen", controles.get(0));
                     startActivity(intent);
                 }
 
@@ -60,7 +74,10 @@ public class Userscreen extends AppCompatActivity {
         sairuser.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View view){
+                controles = new ArrayList<Controle>();
+                controles.add(controleDados);
                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
+                intent.putExtra("controledadosuserscreen", controles.get(0));
                 startActivity(intent);
             }
         });

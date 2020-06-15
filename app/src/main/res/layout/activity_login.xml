@@ -25,7 +25,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:text="@string/susnumber"
             android:textColor="@color/cinzaclaro" />
 
@@ -62,7 +62,7 @@
             android:layout_width="125dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="90dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/clickbutton"
             android:text="@string/action_sign_in"
             android:textAlignment="center" />

@@ -15,7 +15,8 @@
     <string name="bt_checarfila">Checar fila</string>
     <string name="bt_sair">Sair</string>
     <string name="cadastrook">CADASTRO REALZIADO COM SUCESSO!</string>
-    <string name="cadastrocriminoso">ERRO:Cadastro ja existe.</string>
+    <string name="cadastrocriminoso">ERRO: cadastro já existe.</string>
+    <string name="loginErrado">ERRO: número do SUS ou senha incorretos.</string>
 
     <string name="activity_queue_title">Nome,</string>
     <string name="activity_queue_position">Atualmente tem </string>
