@@ -50,6 +50,7 @@ public class Login extends AppCompatActivity {
                     toast.show();
                     return;
                 }
+                controleDados.getRegistro().colocaPacientesComoNaoLogados();
                 pacienteLogin.setLogado(true);
                 controles = new ArrayList<Controle>();
                 controles.add(controleDados);

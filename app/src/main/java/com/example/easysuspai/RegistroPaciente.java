@@ -59,5 +59,12 @@ public class RegistroPaciente implements Serializable {
         this.pacientes = new ArrayList<Paciente>();
         this.quantidadePacientes = 0;
     }
+    public void colocaPacientesComoNaoLogados(){
+        Paciente pacienteAtual;
+        for(int i =0;i < this.quantidadePacientes;i++){
+            pacienteAtual = this.pacientes.get(i);
+            pacienteAtual.setLogado(false);
+        }
 
+    }
 }

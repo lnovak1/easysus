@@ -43,5 +43,4 @@ public class FilaPaciente implements Serializable{
         return false;
     }
 
-
 }
